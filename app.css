@@ -1,0 +1,44 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+}
+
+.box{
+    margin-top: 50px;
+}
+
+.accordion{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 18px;
+    text-align: left;
+    background-color: #ccc;
+    color: #000;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+.panel{
+    padding: 0 18px;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+}
+
+.active, .accordion:hover{
+    background-color: #555;
+    color: #fff;
+}
+
+.accordion::after{
+    content: '\002B';
+    float: right;
+}
+
+.active::after{
+    content: '\2212';
+
+}
